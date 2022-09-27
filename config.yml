@@ -1,0 +1,24 @@
+general:
+    # Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    log_level: DEBUG
+    # output: output 
+    output: ./log_output/
+    # Mode (DEBUG, PROD)
+    mode: PROD
+    number_crawler_processes: 16
+    number_checker_processes: 32
+
+crawler:
+    files:
+        # - /path/to/warc_information_list.txt
+    # URLs is only important for the dynamic crawler
+    urls: 
+        # - https://facebook.com
+    # The db path is only important if the CC SQL module is used
+    db_path: postgresql://athena:f1h89f90u1@localhost/cc_index_database_200_2
+
+checker:
+    rules:
+        - DE1
+        - DE2
+        # ...

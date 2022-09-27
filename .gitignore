@@ -1,0 +1,13 @@
+*__pycache__/
+*.swp
+
+output/
+result.txt
+data/
+env/
+
+misc/*.db
+misc/*.log
+misc/*output*/
+
+.DS_Store
